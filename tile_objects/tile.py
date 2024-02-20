@@ -10,13 +10,15 @@ class Tile:
                  cities=None,
                  fields=None,
                  monastery=None,
-                 has_meeple=False):
+                 has_meeple=False,
+                 meepled_feature=None):
         self.tile_id = tile_id
         self.roads = roads
         self.cities = cities
         self.fields = fields
         self.monastery = monastery
         self.has_meeple = has_meeple
+        self.meepled_feature = meepled_feature
 
     def rotate(self, times):
         pass

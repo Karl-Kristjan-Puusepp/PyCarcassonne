@@ -332,3 +332,17 @@ BASE_SET = []
 for tile in tiles:
     for i in range(base_set_tile_quantities.get(tile.tile_id)):
         BASE_SET.append(tile)
+
+BASE_START_TILE = Tile(
+    tile_id='D',
+    cities=[
+        City(connections=('E'))
+    ],
+    roads=[
+        Road(connections=('N', 'S'))
+    ],
+    fields=[
+        Field(connections=('NE', 'SE'),
+              touching_city=True),
+        Field(connections=('NW', 'WN', 'WS', 'SW'))
+    ])
