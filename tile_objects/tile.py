@@ -22,7 +22,7 @@ class Tile:
         pass
 
     def get_side_feature(self, side):  # N, S, E, W
-        pass
+        pass                           # "Field", "Road", "City"
 
     def add_meeple(self, feature):
         pass
