@@ -1,9 +1,10 @@
 
 class Road:
 
-    def __init__(self, connections: tuple):
+    def __init__(self, connections: tuple, has_meeple=False):
         self.__assert_connections_valid(connections)
         self.connections = connections
+        self.has_meeple = has_meeple
 
     def set_connections(self, connections: tuple):
         self.__assert_connections_valid(connections)
