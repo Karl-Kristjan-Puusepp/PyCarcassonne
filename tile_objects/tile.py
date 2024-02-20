@@ -24,8 +24,11 @@ class Tile:
     def get_side_feature(self, side):  # N, S, E, W
         pass                           # "Field", "Road", "City"
 
-    def add_meeple(self, feature):
-        pass
+    def place_meeple(self, feature):
+        if self.has_meeple:
+            raise ValueError("Cannot place meeple on already occupied tile.")
+        pass # TODO
+
 
     def remove_meeple(self):
-        self.has_meeple = False
+        self.has_meeple = False # TODO - remove meeple from feature
