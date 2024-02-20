@@ -1,6 +1,7 @@
 from game_objects.tilesets import BASE_SET
 import random
 
+
 class Tilebag:
     def __init__(self, tileset=BASE_SET):
         self.tileset = tileset

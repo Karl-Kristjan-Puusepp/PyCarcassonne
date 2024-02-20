@@ -33,4 +33,4 @@ class Tile:
 
 
     def remove_meeple(self):
-        self.has_meeple = False # TODO - remove meeple from feature
+        self.has_meeple = False  # TODO - remove meeple from feature
