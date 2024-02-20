@@ -9,6 +9,9 @@ class City:
         self.has_shield = has_shield
         self.has_meeple = has_meeple
 
+    def place_meeple(self):
+        self.has_meeple = True
+
     @staticmethod
     def __assert_connections_valid(connections):
 

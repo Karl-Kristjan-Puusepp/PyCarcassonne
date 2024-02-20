@@ -6,9 +6,8 @@ class Road:
         self.connections = connections
         self.has_meeple = has_meeple
 
-    def set_connections(self, connections: tuple):
-        self.__assert_connections_valid(connections)
-        self.connections = connections
+    def place_meeple(self):
+        self.has_meeple = True
 
     @staticmethod
     def __assert_connections_valid(connections):

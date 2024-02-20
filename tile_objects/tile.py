@@ -1,5 +1,7 @@
 from tile_objects.road import Road
-
+from tile_objects.city import City
+from tile_objects.field import Field
+from tile_objects.monastery import Monastery
 
 class Tile:
     def __init__(self,
@@ -7,7 +9,7 @@ class Tile:
                  roads=None,
                  cities=None,
                  fields=None,
-                 monastery=False,
+                 monastery=None,
                  has_meeple=False):
         self.tile_id = tile_id
         self.roads = roads
