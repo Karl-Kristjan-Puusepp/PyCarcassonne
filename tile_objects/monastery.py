@@ -1,8 +1,9 @@
 
 class Monastery:
 
-    def __init__(self, has_meeple=False):
-        self.has_meeple = has_meeple
+    def __init__(self, meeple=None):
+        self.meeple = meeple
 
-    def place_meeple(self):
-        self.has_meeple = True
+    def place_meeple(self, meeple):
+        pass
+

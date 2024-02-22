@@ -1,13 +1,13 @@
 
 class Road:
 
-    def __init__(self, connections: tuple, has_meeple=False):
+    def __init__(self, connections: tuple, meeple=None):
         self.__assert_connections_valid(connections)
         self.connections = connections
-        self.has_meeple = has_meeple
+        self.meeple = meeple
 
     def place_meeple(self):
-        self.has_meeple = True
+        pass
 
     @staticmethod
     def __assert_connections_valid(connections):

@@ -11,7 +11,9 @@ class Tile:
                  fields=None,
                  monastery=None,
                  has_meeple=False,
-                 meepled_feature=None):
+                 meepled_feature=None,
+                 meeple_color=None,  # Ugly, should be fixed
+                 rotations=0):
         self.tile_id = tile_id
         self.roads = roads
         self.cities = cities
@@ -19,6 +21,8 @@ class Tile:
         self.monastery = monastery
         self.has_meeple = has_meeple
         self.meepled_feature = meepled_feature
+        self.meeple_color = meeple_color
+        self.rotations = rotations
 
     def rotate(self, times):
         pass

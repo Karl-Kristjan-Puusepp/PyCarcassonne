@@ -3,14 +3,14 @@ class City:
 
     def __init__(self, connections,
                  has_shield=False,
-                 has_meeple=False):
+                 meeple=None):
         self.__assert_connections_valid(connections)
         self.connections = connections
         self.has_shield = has_shield
-        self.has_meeple = has_meeple
+        self.meeple = meeple
 
     def place_meeple(self):
-        self.has_meeple = True
+        pass
 
     @staticmethod
     def __assert_connections_valid(connections):

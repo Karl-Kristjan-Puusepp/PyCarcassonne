@@ -2,15 +2,14 @@
 class Field:
 
     def __init__(self, connections,
-                 has_meeple=False,
+                 meeple=None,
                  touching_city=False):
         self.connections = connections
-        self.has_meeple = has_meeple
+        self.meeple = meeple
         self.touching_city = touching_city
 
     def place_meeple(self):
-        self.has_meeple = True
-
+        pass
     @staticmethod
     def __assert_connections_valid(connections):
         for side in connections:
